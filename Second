@@ -3,6 +3,6 @@
 int main()
 {
     char ch = 'A';
-    printf("%c\n",ch);
+    printf("%c\n",ch);\\%C  表示打印字符格式的数据
     return 0;
 }
