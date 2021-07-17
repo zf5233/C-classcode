@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+    int num1 = 0;
+    int num2 = 0;
+    int sum = 0;//结果：输入两个数字后相加
+    scanf("%d%d",&num1,&num2);//&取地址符号，在计算机建个地址，可找到对应数字
+    sum = num1 + num2;
+    printf("sum=%d\n",sum);
+    return 0;
+}
