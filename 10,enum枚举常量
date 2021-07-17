@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+enum Sex
+{
+    MALE,
+    FEMALE,
+    SECRET
+};//枚举常量
+
+int main()
+{
+    printf("%d\n",MALE);//结果：0
+    printf("%d\n",FEMALE);//结果：1
+    printf("%d\n",SECRET);//结果：2
+    
+    return 0;
+ }
