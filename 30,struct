@@ -1,0 +1,16 @@
+#include<stdio.h>
+struct Book
+{
+	char name[20];
+	short price;
+};
+int main()
+{
+	//利用结构体类型，创建一个该类型的结构体变量
+	struct Book b1 = { "C语言程序设计",55 };
+	printf("书名:%s\n", b1.name);//结果：书名：C语言程序设计
+	printf("价格:%d元\n", b1.price);//结果： 价格：55元
+	b1.price = 15;
+	printf("修改后的价格:%d\n", b1.price);结果：修改后的价格：15
+	return 0;
+}
