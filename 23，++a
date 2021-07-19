@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main()
+{
+	int a = 10;
+	int b = ++a;//前置++:a+1,再赋予b
+	printf("a = %d b =%d\n", a, b);//结果：a = 11 b = 11
+	return 0;
+}
