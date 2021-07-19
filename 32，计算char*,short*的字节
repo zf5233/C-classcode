@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    printf("%d\n", sizeof(char*));//4
+    printf("%d\n", sizeof(short*));//4
+    printf("%d\n", sizeof(int*));//4
+    printf("%d\n", sizeof(double*));//4
+    return 0;
+}
