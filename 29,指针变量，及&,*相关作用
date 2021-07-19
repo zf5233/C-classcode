@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+	int a = 10;//申请了4个字节的空间
+	printf("a = %d\n", a);//结果：a =10
+	printf("%p\n", &a);//结果：0115F3C    &取出a在计算机中的地址
+	int* p = &a;//p是指针变量
+	printf("%p\n", p);//结果：0115F3C  结果与上面相同
+	printf("%d\n", sizeof(p));//结果：4   （32操作系统-4字节 64操作系统-8
+	*p = 20;//* 解引用操作符，间接访问操作符
+	printf("a = %d\n", *p);//结果：a = 20
+	return 0;
+}
