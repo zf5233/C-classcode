@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+	int day = 0;
+	switch (day)
+	{
+	    case1:
+		    printf("星期一\n");
+		    break;
+	    case2:
+		    printf("星期二\n");
+		    break;
+	    case3:
+		    printf("星期三\n");
+		    break;
+	    case4:
+		    printf("星期四\n");
+		    break;
+	    case5:
+		    printf("星期五\n");
+		    break;
+	    case6:
+		    printf("星期六\n");
+		    break;
+	    case7:
+		    printf("星期天\n");
+		    break;
+	}
+	return 0;
+}
