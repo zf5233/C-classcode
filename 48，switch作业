@@ -5,7 +5,7 @@ int main()
 	int y = 3;
 	switch (x % 2)//余1
 	{
-	case1:
+	case 1:
 		switch (y)
 		{
 		case 0:
@@ -16,7 +16,7 @@ int main()
 		default:printf("hello");
 		}//case1无break，后面case2也会运行
 	case 2:
-		printf("third");//打印helllothird（实际运行有问题
+		printf("third");//打印helllothird
 	}
 	return 0;
 }
