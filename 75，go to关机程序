@@ -10,7 +10,7 @@ again:
 	scanf("%s", input);
 	if (strcmp(input, "我是猪") == 0)
 	{
-		system("shutdowm -a");
+		system("shutdown -a");
 	}
 	else
 	{
