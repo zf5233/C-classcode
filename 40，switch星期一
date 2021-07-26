@@ -25,6 +25,8 @@ int main()
 	    case7:
 		    printf("星期天\n");
 		    break;
+            default:
+	            break;
 	}
 	return 0;
 }
