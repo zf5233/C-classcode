@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-//不够高效
+//不够高效.
 	int arr[] = { 1,2,3,4,5,6,7,8,9,10 };
 	int k = 7;//->17,找不到
 	int i = 0;
