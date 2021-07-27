@@ -1,0 +1,22 @@
+#include <stdio.h>
+int is_prime(int n)//是素数返回1，不是素数返回0
+{
+	int j = 0;
+	for (j = 2; j < n; j++)//2到n-1
+	{
+		if (n % j == 0)
+			return 0;//使用return 0直接结束此函数，break则只跳出一层大括号
+	}
+	//if( j == n );多此一举
+	return 1;//不能写在for循环里面，否则只判断了一个数是否整除
+}
+int main()
+{
+	int i = 0;
+	for (i = 100; i <= 200; i++)//打印1-100之间的素数
+	{
+		if (is_prime(i) == 1)//判断i是否为素数
+			printf("%d ", i);
+	}
+	return 0;
+}
