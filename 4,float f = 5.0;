@@ -1,8 +1,0 @@
-#include <stdio.h>
-
-int main()
-{
-    float f = 5.0;\\结果：5.000000
-    printf("%f\n",f);
-    return 0;
-}

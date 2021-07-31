@@ -1,8 +1,0 @@
-#include <stdio.h>
-
-int main()
-{
-    int age = 20;
-    printf("%d\n",age);\\%d 表示打印整型十进制数据
-    return 0;
-}

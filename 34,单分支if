@@ -1,8 +1,0 @@
-#include <stdio.h>
-int main()
-{
-	int age = 17;//18，什么都不输出
-	if (age < 18)
-		printf("未成年\n");
-	return 0;
-}
