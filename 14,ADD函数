@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int ADD(int x, int y)
+{
+	int z = x + y;
+	return z;
+}//执行复杂操作时，函数较简便
+
+int main()
+{
+	int num1 = 10;
+	int num2 = 20;
+	int sum = 0;
+	int a = 100;
+	int b = 200;
+
+	sum = ADD(num1, num2);
+
+	sum = ADD(a, b);//结果：300
+	printf("sum = %d\n", sum);
+
+	return 0;
+
+}

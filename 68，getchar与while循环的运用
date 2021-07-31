@@ -1,0 +1,13 @@
+#include<stdio.h>
+
+int main()
+{
+	int ch = 0;
+	while ((ch = getchar()) != EOF)
+	{
+		if (ch < '0' || ch>'9')//应输入数字，后面大写转小写有用
+			continue;
+		putchar(ch);//结果：输入4-生成4
+	}
+	return 0;
+}

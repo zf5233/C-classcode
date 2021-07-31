@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+	int a = 3;//011
+	int b = 5;//101
+	int c = a | b;// &按位与，|按位或，^按位异或
+	printf("%d\n", c);//111=7
+	return 0;
+}

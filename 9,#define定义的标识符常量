@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+#define MAX 10
+
+int main()
+{
+    int arr[MAX] = {0};//加上printf,打印结果为10
+    return 0;
+}

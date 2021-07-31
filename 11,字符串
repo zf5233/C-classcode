@@ -1,0 +1,10 @@
+#include<stdio.h> 
+
+int main()
+{ 
+	char arr1[] = "abc";
+	char arr2[] = { 'a','b','c' };
+	printf("%d\n", strlen(arr1));//结果：3
+	printf("%d\n", strlen(arr2));//结果：随机值（直到遇到'\0'截止）
+	return 0;
+}

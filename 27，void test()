@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+void test()
+{
+	int a = 1;
+	a++;
+	printf("a = %d\n", a);//结果：a =2 a =2 a = 2 a =2 a =2 
+}
+int main()
+{
+	int i = 0;
+	while (i < 5)
+	{
+		test();
+		i++;
+	}
+	return 0;
+}

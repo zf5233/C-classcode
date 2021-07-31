@@ -1,0 +1,12 @@
+int func(int a)//求func(1),结果为0
+{
+	int b;
+	switch (a)
+	{
+	    case 1:b = 30;//无break,则继续往下运行
+	    case 2:b = 20;//同上
+	    case 3:b = 16;//同上
+	    default: b = 0;//得到结果
+	}
+	return b;
+}
