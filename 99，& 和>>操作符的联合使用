@@ -15,10 +15,10 @@ int main()
 	}
 	printf("%d\n", count);
 
-	/*while (num)
+	/*while (num)//自定义函数，返回unsigned int num即可
 	{
-		if (num % 2 == 1)
-			count++;
+		if (num % 2 == 1)//改进自定义函数：while循环  n = n&(n-1);   count++;  return count;
+			count++;//操作符笔记记录
 		num = num / 2;
 	}*/
 	//printf("%d\n", count);
