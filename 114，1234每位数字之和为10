@@ -1,0 +1,21 @@
+#include<stdio.h>
+int He_feifu(unsigned int num)
+{
+	if (num > 9)
+	{
+		return He_feifu(num / 10) + num % 10;
+	}
+	else
+	{
+		return num;
+	}
+}
+int main()
+{
+	//实现一个数字的每位数字之和
+	unsigned int num = 0;//非负整数
+	scanf("%d", &num);
+	int ret = He_feifu(num);
+	printf("ret = %d\n", ret);
+	return 0;
+}
