@@ -1,19 +1,20 @@
-#include <stdio.h>
-#include<assert.h>
-void my_strcpy(char* dest,const char* src)
+#include<stdio.h>
+#include<assert.h>                  //* src不能被改变，写反了会报错
+char* my_strcpy(char* dest, const char* src)//返回目的地的起始地址，char*
 {
+	char* ret = dest;//一开始就把dest放入ret中
 	assert(dest != NULL);
 	assert(src != NULL);
 	while (*dest++ = *src++)
 	{
 		;
 	}
+	return ret;//返回ret
 }
 int main()
 {
-	char arr1[] = "###";
-	char arr2[] = "lx1";
-	my_strcpy(arr1, arr2);
-	printf("%s\n", arr1);
-	return 0;
+	char arr1[] = "#######";
+	char arr2[] = "sorry";
+	printf("%s\n", my_strcpy(arr1, arr2));//返回值作为printf函数的参数
+	return 0;                            //返回值也可以检测目的地是否是想要的数据
 }
