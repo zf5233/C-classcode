@@ -1,0 +1,27 @@
+#include<stdio.h>
+int check_sys()//不需要参数，里面创建了变量
+{
+	int a = 1;
+	return *(char*)&a;//返回这个字节的值
+	//char* p = (char*)&a;
+	//if (*p == 1)//改成return* p,以下可省略
+	//	return 1;
+	//else
+	//	return 0;
+}
+int main()
+{
+	//写一段代码告诉我，当前机器的字节序
+	//返回1，小端，返回0，大端
+	int a = 1;
+	int ret = check_sys();
+	if (ret == 1)
+	{
+		printf("小端\n");
+	}
+	else
+	{
+		printf("大端\n");
+	}
+	return 0;
+}
