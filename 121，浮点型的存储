@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	int n = 0;
+	float* pFloat = (float*)&n;
+	printf("n的值为：%d\n", n);//0
+	printf("*pFloat的值为：%f\n", *pFloat);//0.000000
+
+	*pFloat = 9.0;
+	printf("num的值为：%d\n", n);//1091567616
+	printf("*pFloat的值为：%f\n", *pFloat);//9.000000
+	return 0;
+}
