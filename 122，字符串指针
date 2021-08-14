@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+      char arr1[] = "abc";
+      char arr2[] = "acb";
+      char* arr3[] = "abc";
+      char* arr4[] = "acb";
+      if(arr1 == arr2)
+         printf("same\n");
+      else
+         printf("not same\n");
+      if(arr3 == arr4)
+         printf("same\n");
+       else
+         printf("not\n");
+       return 0;
+ }
