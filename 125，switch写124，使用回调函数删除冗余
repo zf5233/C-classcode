@@ -1,0 +1,58 @@
+#include<stdio.h>
+//switch写124，并优化，使用回调函数删除冗余的语句
+void menu()
+{
+	printf("***********************\n");
+	printf("**** 1,add   2,sub ****\n");
+	printf("**** 3,mul   4,div ****\n");
+	printf("******  0,exit  *******\n");
+}
+int Add(int x, int y)
+{
+	return x + y;
+}
+int Sub(int x, int y)
+{
+	return x - y;
+}
+int Mul(int x, int y)//回调函数
+{
+	return x * y;
+}
+int Div(int x, int y)//回调函数
+{
+	return x / y;
+}
+void Calc(int(*pf)(int,int))
+{
+	int x = 0;
+	int y = 0;
+	printf("请输入2个数字:");
+	scanf("%d%d", &x, &y);
+	printf("%d\n", pf(x, y));
+}
+int main()
+{
+	int input = 0;
+	do
+	{
+		menu();
+		printf("请选择：");
+        scanf("%d", &input);
+		switch (input)
+		{
+		case 1:
+			Calc(Add);
+			break;
+		case 2:
+			Calc(Sub);
+			break;
+		case 3:
+			Calc(Mul);
+			break;
+		case 4:
+			Calc(Div);
+			break;
+		}
+	} while (input);
+}
